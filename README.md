@@ -34,6 +34,8 @@ Video description:
 
 > A video walkthrough on loading a sample platform - Silicon Lab's EFM32MG running a Zephyr shell application, displaying the list of peripherals, and logging capabilities.
 
+EFR32MG is a SoC from the company Silicon Lab's and Zephyr is a RTOS for embedded systems.
+
 Three console windows are shown on a computer screen at the start of the video:
 
 1. Terminal - root@runner...
@@ -63,4 +65,17 @@ In the Renode window a yellow text appears:
 (EFR32-MG)
 ```
 
-Now also another fourth console window pops up, labelled EFR32-MG:sysbus.usart0.
+After the yellow text the word `peripherals` then appears, unclear if this is typed in or shows up because it is part of the script.
+
+Now also another fourth console window pops up, labelled EFR32-MG:sysbus.usart0. Name implies that this relates to serial communication of the EFR32-MG.
+
+A tree view is displayed in the Renode window showing the available peripherals on the EFR32-MG. A selection of what is displayed is:
+
+- bitband_peripherals
+- bitband_sram
+- cpu
+- flash
+- flashCtrl
+- i2c0
+- nvic
+- usart0
