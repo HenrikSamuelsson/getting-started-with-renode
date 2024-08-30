@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "bitband",
+        "nvic",
         "Renode",
         "resc",
         "sysbus"
