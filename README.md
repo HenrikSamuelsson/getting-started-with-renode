@@ -59,11 +59,13 @@ Assuming that the first commands sets the binary file to be run by Renode. The s
 
 The commands causes output in the Terminal - Renode. There is multiple output but the summary is that the binary is loaded and the script is run as per the commands.
 
-In the Renode window a yellow text appears:
+In the Renode window a yellow text prompt appears:
 
 ```txt
 (EFR32-MG)
 ```
+
+##### Peripherals Listing
 
 After the yellow text the word `peripherals` then appears, unclear if this is typed in or shows up because it is part of the script.
 
@@ -79,3 +81,19 @@ A tree view is displayed in the Renode window showing the available peripherals 
 - i2c0
 - nvic
 - usart0
+
+##### USART0
+
+After the listing of the peripherals we come back to the yellow `(EFR32-MG)` prompt. Another command pops in, `usart0`. Again this is either user added directly, or indirectly via the script.
+
+This command seems to causes instructions for how to use the `usart0` command to be displayed. Unsure if the `usart0` command actually also does something affecting the emulator execution.
+
+##### Emulation Start
+
+The user types `start` at the yellow prompt, causing the response `Starting emulation...` in the Renode window.
+
+In parallel in the Terminal - Renode window there is an output sequence:
+
+- Green output about machine being started
+- Some red warnings about incorrect writes
+- 
